@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q3Quiz1</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		#box {
+			font-family: American Typewriter;
+		}
+		h1 {
+			font-family: Times New Roman;
+		}
+		#box {
+			background-color: #ffd70f; 
+			width: 500px;
+			box-shadow:2px 2px 2px rgba(0,0,0, 0.8); 
+			margin: auto;
+			padding: 15px;
+			border: 3px dotted black;
+		}
+		body {
+			background-image: url('https://marketplace.canva.com/EAF-gsKshP0/1/0/1600w/canva-yellow-watercolor-floral-blank-background-document-a4-%28landscape%29-j3c6NN-8OU4.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed; 
+		}
+
+	</style>
+</head>
+<body>
+<center>
+<script>
+	// declare all variables here
+
+	var a = 25;
+	var b = 4;
+	var c = a/b;
+	var d = a + b; 
+	var e = 24; 
+
+</script>
+
+<br> <br>
+<h1> <b> <mark> If a = 25, b = 4, d = a + b, and e = 24... </mark> </b> </h1>
+<br> 
+ 
+ <div id="box"> 
+<h5> <b> Arithmetic Operators </b> </h5>
+<p style = "color: #9c8203"> <i> Two multiplied to the quantity of a + b minus one is equal to... </i> </p> 
+<p id="display"> </p>
+<p> ____ </p>
+<p style = "color: #9c8203"> <i> The remainder of twenty-five divided by four is... </i> </p>
+<p id="display2"></p>
+<button type="button" class="btn btn-success" onclick = "var a = 25; var b = 4 ; document.getElementById('display').innerHTML = 2*d-1 ; document.getElementById('display2').innerHTML = a % b;"> Calculate! </button> 
+
+<br> <br> <br> 
+<h5> <b> Comparison Operators </b> </h5>
+<p style = "color: #9c8203"> <i> Is the value of b greater than the value of a? : </i> </p>
+<p id="display3"> </p>
+<p style = "color: #9c8203"> <i> If the value of d is equal to a minus b, then is d less than a? : </i> </p>
+<p id="display4"></p>
+<button type="button" class="btn btn-success" onclick = "var a = 25; var b = 4 ; document.getElementById('display3').innerHTML = b > a ; document.getElementById('display4').innerHTML = d < a ;"> Find out! </button> 
+
+<br> <br> <br>
+<h5> <b> Logical Operators </b> </h5>
+<p style = "color: #9c8203"> <i> (x == e) : </i> </p>
+<p id="display5"> </p>
+<p style = "color: #9c8203"> <i> (a == e)&&(b == e) : </i> </p>
+<p id="display6"></p>
+<button type="button" class="btn btn-success" onclick = "var a = 25; var b = 4; var e = 24; document.getElementById('display5').innerHTML = (25 == 24)  ; document.getElementById('display6').innerHTML = (25 == 24) && (4 > 24);"> True or False? </button> 
+<br> <br>
+</div>
+<br> <br> <br> <br> 
+</body>
+</html>
